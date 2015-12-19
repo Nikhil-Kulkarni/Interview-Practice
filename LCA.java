@@ -38,7 +38,7 @@ public Node LCA(Node root, Node p, Node q) {
         return root;
     }
     if (pOnLeft && qOnLeft) {
-        return LCA(root.left, p , q);
+        return LCA(root.left, p, q);
     }
     return LCA(root.right, p, q);
 }
