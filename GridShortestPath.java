@@ -1,7 +1,7 @@
 public class GridShortestPath {
     public static void main(String[] args) {
-        int[][] grid = new int[4][5];
-        System.out.println(minPath(grid, 0, 0, 3, 4, 0));
+        int[][] grid = new int[3][3];
+        System.out.println(minPath(grid, 0, 0, 2, 2, 0));
     }
 
     public static int minPath(int[][] grid, int xStart, int yStart, int xEnd, int yEnd, int n) {
@@ -16,8 +16,7 @@ public class GridShortestPath {
             return n;
         } else {
             grid[xStart][yStart] = -1;
-             ways = Math.min(1 + minPath(grid, xStart + 1, yStart, xEnd, yEnd, n + 1), Math.min(1 + minPath(grid, xStart - 1, yStart, xEnd, yEnd, n + 1),
-                Math.min(1 + minPath(grid, xStart, yStart + 1, xEnd, yEnd, n + 1), 1 + minPath(grid, xStart, yStart - 1, xEnd, yEnd, n + 1))));
+            
             grid[xStart][yStart] = 0;
         }
         return ways;
