@@ -1,6 +1,6 @@
 public class QuickSelect {
     public static void main(String[] args) {
-        int[] arr = {0,2,5,3,7,9,6,10};
+        int[] arr = {5, 8, 1, 3, 4, 2, 8, 2, 9};
 
         // Finds 2nd largest element in list O(n) - average / O(n^2) worst case
         System.out.println(quickSelect(arr, 2, 0, arr.length - 1));
