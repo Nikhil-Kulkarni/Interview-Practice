@@ -16,7 +16,7 @@ public class GridShortestPath {
             return n;
         } else {
             grid[xStart][yStart] = -1;
-            
+
             grid[xStart][yStart] = 0;
         }
         return ways;

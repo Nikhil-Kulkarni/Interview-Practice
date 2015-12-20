@@ -35,6 +35,6 @@ public class Pascals {
 
     public static ArrayList<ArrayList<Integer>> generateDP(int n) {
         ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-        
+
     }
 }
