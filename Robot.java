@@ -14,4 +14,13 @@ public class Robot {
         }
         return dfs(x, y, currX + 1, currY) + dfs(x, y, currX, currY + 1);
     }
+
+    public static int robotDP(int x, int y) {
+        int[][] grid = new int[x][y];
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+
+            }
+        }
+    }
 }
