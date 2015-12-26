@@ -18,6 +18,6 @@ public class NonContigSubstring {
 
     public static int numSubsDP(String str, String sub) {
         int[][] grid = new int[str.length() + 1][sub.length() + 1];
-        
+
     }
 }
