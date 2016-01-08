@@ -1,5 +1,6 @@
 import java.util.*;
 public class SubstringKUnique {
+    // Longest substring with k unique characters
     public static void main(String[] args) {
         System.out.println(longestSub("aabcdefffggawoi", 3));
     }
