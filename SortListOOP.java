@@ -6,15 +6,23 @@ public class SortListOOP {
 
     public static void main(String[] args) {
         SortedList<Node> list = new SortedList<Node>();
-        list.add(new Node(2));
-        list.add(new Node(1));
         list.add(new Node(5));
-        for (Node num : list) {
-            System.out.println(num.getData());
+        list.add(new Node(1));
+        list.add(new Node(2));
+        Iterator iter = list.iterator();
+        while (iter.hasNext()) {
+            Node temp = (Node)iter.next();
+            System.out.println(temp.getData());
         }
     }
 }
 
+// Test cases for sorting:
+// Reverse order array, in order array, no elements in array, 1 element in array,
+// duplicate elements
+
 // Encapsulation - Hiding data from other classes. Using mutators and accessors to manipulate
 // private variables.
-//
+// Abstraction - Creating parent child classes
+// Inheritance - Inheriting public and protected variables and methods from super class
+// Polymorphism - Overloading and Overriding methods
