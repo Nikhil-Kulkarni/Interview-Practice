@@ -17,6 +17,12 @@ public class SortListOOP {
     }
 }
 
+// Things to review:
+// Software Testing, OOP Principles, Basic algorithms
+
+// To use collections sort method, pass in a comparator and override the compare(E, E) method
+// To implement Comparable, override compareTo
+
 // Test cases for sorting:
 // Reverse order array, in order array, no elements in array, 1 element in array,
 // duplicate elements
@@ -26,3 +32,6 @@ public class SortListOOP {
 // Abstraction - Creating parent child classes
 // Inheritance - Inheriting public and protected variables and methods from super class
 // Polymorphism - Overloading and Overriding methods
+
+// Divide and conquer paradigms
+// Memoization
