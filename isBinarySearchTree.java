@@ -20,3 +20,17 @@ public boolean isBST(Node root) {
         return false;
     }
 }
+
+public boolean isBinarySearchTree(Node root) {
+    return traverseSubtree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+}
+
+public boolean traverseSubtree(Node root, int low, int high) {
+    if (root == null) {
+        return true;
+    }
+    if (root.data < low || root.data > high) {
+        return false;
+    }
+    return traverseSubtree(root.left, low, root.data) && traverseSubtree(root.right, root.data, high);
+}
