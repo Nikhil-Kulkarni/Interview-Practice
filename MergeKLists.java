@@ -9,7 +9,7 @@ public class MergeKLists {
                 new Comparator<T>() {
                     @Override
                     public int compare(Node n1, Node n2) {
-                        return n1.data = n2.data;
+                        return n1.data - n2.data;
                     }
                 });
         Node head = new Node();
