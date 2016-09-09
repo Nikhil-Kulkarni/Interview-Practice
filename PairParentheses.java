@@ -12,6 +12,7 @@ public class PairParentheses {
     public static void pair(String prefix, int n, ArrayList<String> list, int oRemaining, int cRemaining) {
         if (prefix.length() == n*2) {
             list.add(prefix);
+            return;
         }
         if (oRemaining > cRemaining) {
             return;
