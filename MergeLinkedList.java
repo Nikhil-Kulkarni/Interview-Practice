@@ -6,7 +6,7 @@ public class MergeLinkedList {
     public Node merge(Node n1, Node n2) {
         Node currOne = n1;
         Node currTwo = n2;
-        Node head = NULL;
+        Node head = null;
         if (currOne.data > currTwo.data) {
             head = currOne;
             currOne = currOne.next;
@@ -15,7 +15,7 @@ public class MergeLinkedList {
             currTwo = currTwo.next;
         }
         Node curr = head;
-        while (!currOne == NULL && !currTwo == NULL) {
+        while (currOne != null && currTwo != null) {
             if (currOne.data > currTwo.data) {
                 curr.next = currOne;
                 currOne = currOne.next;
@@ -26,12 +26,12 @@ public class MergeLinkedList {
             curr = curr.next;
         }
 
-        while (!currOne == NULL) {
+        while (currOne != null) {
             curr.next = currOne;
             currOne = currOne.next;
             curr = curr.next;
         }
-        while (!currTwo == NULL) {
+        while (currTwo != null) {
             curr.next = currTwo;
             currTwo = currTwo.next;
             curr = curr.next;

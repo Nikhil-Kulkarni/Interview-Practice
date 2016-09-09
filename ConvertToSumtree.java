@@ -17,6 +17,6 @@ public class ConvertToSumtree {
 
     // Using only addition
     public static void fixWithAdd(Node root) {
-        
+
     }
 }

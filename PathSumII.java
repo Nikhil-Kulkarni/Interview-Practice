@@ -10,9 +10,6 @@ public boolean pathSum(Node root, int sum, int tsum) {
     if (root.left == null && root.right == null && sum == tsum) {
         return true;
     }
-    if (root.left == null && root.right == null && sum != tsum) {
-        return false;
-    }
     return pathSum(root.left, sum, tsum) || pathSum(root.right, sum, tsum);
 }
 
