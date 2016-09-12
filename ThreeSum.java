@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class ThreeSum {
     public static void main(String[] args) {
         int[] arr = {1, 4, -4, 0, -5};
-        ArrayList<ArrayList<Integer>> sol = allTriplets(arr, 0);
+        ArrayList<ArrayList<Integer>> sol = allTriplets(arr, -9);
         for (int i = 0; i < sol.size(); i++) {
             for (int j = 0; j < sol.get(i).size(); j++) {
                 System.out.print(sol.get(i).get(j) + " ");
@@ -64,7 +64,7 @@ public class ThreeSum {
                             k--;
                         }
                     }
-                    else if (arr[i] + arr[j] + arr[j] < 0) {
+                    else if (arr[i] + arr[j] + arr[k] < target) {
                         j++;
                     } else {
                         k--;

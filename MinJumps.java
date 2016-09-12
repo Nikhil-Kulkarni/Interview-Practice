@@ -28,7 +28,7 @@ public class MinJumps {
                 int min = Integer.MAX_VALUE;
                 int steps = 0;
                 for (int j = 1; j <= arr[i]; j++) {
-                    
+
                 }
             }
     }

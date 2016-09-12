@@ -20,7 +20,7 @@ public Node findLoop(Node head) {
         return null;
     }
     slow = head;
-    while (slow != head) {
+    while (slow != fast) {
         slow = slow.next
         fast = fast.next;
     }

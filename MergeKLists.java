@@ -24,7 +24,7 @@ public class MergeKLists {
             Node temp = queue.poll();
             curr.next = temp;
             if (temp.next != null) {
-                queue.add(temp);
+                queue.add(temp.next);
             }
             curr = curr.next;
         }

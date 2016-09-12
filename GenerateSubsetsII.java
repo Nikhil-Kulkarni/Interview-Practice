@@ -9,7 +9,7 @@ public class GenerateSubsetsII {
         arr[0] = 1;
         arr[2] = 3;
         arr[1] = 2;
-        ArrayList<ArrayList<Integer>> l = powerSet(arr, arr.length);
+        ArrayList<ArrayList<Integer>> l = generateSubsets(list);
         for (ArrayList<Integer> li : l) {
             for (int num : li) {
                 System.out.print(num + " ");

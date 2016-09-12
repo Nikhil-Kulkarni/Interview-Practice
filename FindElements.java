@@ -20,5 +20,5 @@ public int[] findElements(int[] arr) {
             secondLowest = arr[i];
         }
     }
-    return new int {highest, secondHighest, lowest, secondLowest};
+    return {highest, secondHighest, lowest, secondLowest};
 }

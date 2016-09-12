@@ -4,7 +4,7 @@ public class ConvertToSumtree {
     }
 
     // Using addition and subtraction
-    public static int fix(Node root) {
+    public static int convert(Node root) {
         if (root.left == NULL && root.right == NULL) {
             return root.data;
         }
